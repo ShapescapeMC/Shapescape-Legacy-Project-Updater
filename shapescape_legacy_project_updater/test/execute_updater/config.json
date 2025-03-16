@@ -29,8 +29,8 @@
 						"filter": "shapescape_legacy_project_updater",
 						"settings": {
 							"update_execute_commands": true,
-							"update_block_commands": false,
-							"update_summon_commands": false
+							"update_block_commands": true,
+							"update_summon_commands": true
 						}
 					},
 					{

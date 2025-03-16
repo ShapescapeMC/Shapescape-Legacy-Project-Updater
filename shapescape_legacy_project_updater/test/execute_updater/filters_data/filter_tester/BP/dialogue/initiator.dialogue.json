@@ -29,10 +29,10 @@
 							"/execute as @initiator at @s positioned 1 2 3 run execute as @initiator at @s positioned 1 2 3 run say Fooooooooo",
 							"/execute as @initiator at @s positioned ~-1 ~.2 ~-.3 run execute as @initiator at @s positioned ~-1 ~.2 ~-.3 run say Weird numbers",
 							// Execute detect
-							"/execute as @initiator at @s positioned ~ ~ ~ if block 1 2 3 minecraft:stone 1 run execute as @initiator at @s positioned ~ ~ ~ if block 1 2 3 minecraft:stone 1 run say Hi",
-							"/execute as @initiator at @s positioned ~ ~ ~ if block 1 ~ 3 minecraft:stone 1 run execute as @initiator at @s positioned ~ ~ ~ if block 1 ~ 3 minecraft:stone 1 run say All players: @e[type=player]",
-							"/execute as @initiator at @s positioned 1 2 3 if block 1 ~~-0.3 minecraft:stone 1 run execute as @initiator at @s positioned 1 2 3 if block 1 ~~-0.3 minecraft:stone 1 run say Fooooooooo",
-							"/execute as @initiator at @s positioned ~-1 ~.2 ~-.3 if block ~~~ stone -1 run execute as @initiator at @s positioned ~-1 ~.2 ~-.3 if block ~~~ stone -1 run say Weird numbers"
+							"/execute as @initiator at @s positioned ~ ~ ~ if block 1 2 3 minecraft:stone 1 run execute as @initiator at @s positioned ~ ~ ~ if block 1 2 3 minecraft:stone [\"stone_type\" = \"granite\"] run say Hi",
+							"/execute as @initiator at @s positioned ~ ~ ~ if block 1 ~ 3 minecraft:stone 1 run execute as @initiator at @s positioned ~ ~ ~ if block 1 ~ 3 minecraft:stone [\"stone_type\" = \"granite\"] run say All players: @e[type=player]",
+							"/execute as @initiator at @s positioned 1 2 3 if block 1 ~~-0.3 minecraft:stone 1 run execute as @initiator at @s positioned 1 2 3 if block 1 ~~-0.3 minecraft:stone [\"stone_type\" = \"granite\"] run say Fooooooooo",
+							"/execute as @initiator at @s positioned ~-1 ~.2 ~-.3 if block ~~~ stone -1 run execute as @initiator at @s positioned ~-1 ~.2 ~-.3 if block ~~~ stone [] run say Weird numbers"
 						]
 					}
 				]
