@@ -4,22 +4,21 @@
 
 Installation <introduction/installation>
 Settings <introduction/settings>
-Usage <introduction/usage>
 ```
 
 ![](../header.jpg)
 
-# PLACEHOLDER
-PLACEHOLDER
+# Shapescape Legacy Project Updater
+A filter for updating project using legacy commands - old `execute` format, block commands (`fill`, `setblock`, `execute .. if block`), and entity commands (`summon`).
 
 ## 🧑‍🏫 About
-PLACEHOLDER
+Shapescape-Legacy-Project-Updater
 
 ## 👷 Contributing
-We welcome contributions from the community! If you'd like to contribute to this project, please read our [contribute file](https://www.github.com/ShapescapeMC/PLACEHOLDER/blob/main/CONTRIBUTING.md) for guidelines on how to get started.
+We welcome contributions from the community! If you'd like to contribute to this project, please read our [contribute file](https://www.github.com/ShapescapeMC/Shapescape-Legacy-Project-Updater/blob/main/CONTRIBUTING.md) for guidelines on how to get started.
 
 ## 🗒️ License
-This project is licensed under the GNU v.3.0 License - see the [LICENSE](https://github.com/ShapescapeMC/PLACEHOLDER/blob/main/LICENSE) file for details.
+This project is licensed under the GNU v.3.0 License - see the [LICENSE](https://github.com/ShapescapeMC/Shapescape-Legacy-Project-Updater/blob/main/LICENSE) file for details.
 
 This license ensures that the tool remains open source, while still allowing you to use the generated content in your commercial Minecraft projects.
 

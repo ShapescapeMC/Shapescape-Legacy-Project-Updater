@@ -1,0 +1,9 @@
+{
+	"filters": [
+		{
+			"runWith": "python",
+			"script": "./main.py",
+			"name": "shapescape:shapescape_legacy_project_updater"
+		}
+	]
+}

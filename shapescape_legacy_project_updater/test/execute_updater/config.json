@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.1.json",
+	"author": "Shapescape",
+	"name": "Execute-Updater-Test",
+	"packs": {
+		"behaviorPack": "./packs/BP",
+		"resourcePack": "./packs/RP"
+	},
+	"regolith": {
+		"dataPath": "./filters_data",
+		"filterDefinitions": {
+			"filter_tester": {
+				"url": "github.com/Bedrock-OSS/regolith-filters",
+				"version": "1.0.0"
+			},
+			"shapescape_legacy_project_updater": {
+				"runWith": "python",
+				"script": "../../main.py"
+			}
+		},
+		"profiles": {
+			"default": {
+				"export": {
+					"readOnly": true,
+					"target": "local"
+				},
+				"filters": [
+					{
+						"filter": "shapescape_legacy_project_updater",
+						"settings": {
+							"update_execute_commands": true,
+							"update_block_commands": false,
+							"update_summon_commands": false
+						}
+					},
+					{
+						"filter": "filter_tester",
+						"settings": {
+							"errors_stop_execution": false
+						}
+					}
+				]
+			}
+		}
+	}
+}

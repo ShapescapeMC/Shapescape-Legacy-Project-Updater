@@ -1,0 +1,3 @@
+execute as @a at @s positioned ~ ~ ~ run detect stone 0 execute as @s at @s positioned 1 2 3 run say Hi
+execute as @e[type=player] at @s positioned ~ ~ ~ run execute as @s[type=player] at @s positioned 1 2 3 run detect minecraft:stone -1 say All players: @e[type=player]
+execute as @s at @s positioned 1 2 3 run execute as @s at @s positioned 4 5 6 run execute as @s at @s positioned 7 8 9 run execute as @s at @s positioned 10 11 12 if block ^2.3 ^4 ^-1.2 dirt  run execute as @s at @s positioned 13 14 15 run execute as @s at @s positioned 16 17 18 run execute as @s at @s positioned 19 20 21 run say Hello

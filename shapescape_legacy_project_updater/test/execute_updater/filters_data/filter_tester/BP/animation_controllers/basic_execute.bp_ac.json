@@ -1,0 +1,33 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.basic_execute": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"basic_execute": "query.variant = 1"
+						}
+					]
+				},
+				"basic_execute": {
+					"on_entry": [
+						"v.some_variable = 1;",
+						"/execute as @a at @s positioned ~ ~ ~ run say Hi",
+						"/execute as @e[type=player] at @s positioned ~ ~ ~ run say All players: @e[type=player]",
+						"/execute as @p[scores={foo=1}] at @s positioned 1 2 3 run say Fooooooooo",
+						"/execute as @e[name=\"Some name\",scores={someScore=1,\"other Score\"=3}] at @s positioned ~-1 ~.2 ~-.3 run say Weird numbers"
+					],
+					"on_exit": [
+						"v.some_variable = 1;",
+						"/execute as @a at @s positioned ~ ~ ~ run say Hi",
+						"/execute as @e[type=player] at @s positioned ~ ~ ~ run say All players: @e[type=player]",
+						"/execute as @p[scores={foo=1}] at @s positioned 1 2 3 run say Fooooooooo",
+						"/execute as @e[name=\"Some name\",scores={someScore=1,\"other Score\"=3}] at @s positioned ~-1 ~.2 ~-.3 run say Weird numbers"
+					]
+				}
+			}
+		}
+	}
+}
