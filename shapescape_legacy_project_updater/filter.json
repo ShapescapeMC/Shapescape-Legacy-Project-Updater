@@ -1,4 +1,5 @@
 {
+	"description": "A filter for updating project using legacy commands - old execute format, block commands (fill, setblock, execute .. if block), and entity commands (summon).",
 	"filters": [
 		{
 			"runWith": "python",
